@@ -8,21 +8,23 @@ Coded by Meen Chul Kim
 '''
 
 # Assign and print variables
+shortform = '{} + {} = {}'
+longform = '{} + {} + {} = {}'
 x = 1
 y = 2
-print '{} + {} = {}'.format(x, y, x + y)
+print shortform.format(x, y, x + y)
 
 # Define a function that takes two numbers and adds them together
 def add_nums(x, y):
-	return '{} + {} = {}'.format(x, y, x + y)
+	return shortform.format(x, y, x + y)
 
 print add_nums(x, y)
 
 # Update add_nums to take an optional 3rd parameter
 def add_nums(x, y, z=None):
 	if z != None:
-		return '{} + {} + {} = {}'.format(x, y, z, x + y + z)
-	return '{} + {} = {}'.format(x, y, x + y)
+		return longform.format(x, y, z, x + y + z)
+	return shortform.format(x, y, x + y)
 
 print add_nums(x, y)
 print add_nums(x, y, x + y)
