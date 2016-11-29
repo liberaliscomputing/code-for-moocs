@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 '''
 The Python Programming Language: Functions
 November 28, 2016
@@ -36,5 +39,4 @@ print add_nums(x, y, flag=True)
 
 # Assign function add_nums to a variable
 sum = add_nums(x, y)
-print sum
- 
+print sum 

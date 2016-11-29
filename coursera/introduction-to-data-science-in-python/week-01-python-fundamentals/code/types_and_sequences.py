@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 '''
 The Python Programming Language: Types and Sequences
 November 28, 2016
