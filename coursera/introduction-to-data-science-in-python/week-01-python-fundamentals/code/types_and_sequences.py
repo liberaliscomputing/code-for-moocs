@@ -11,6 +11,7 @@ Coded by Meen Chul Kim
 s = 'This is a string'
 def add_nums(x, y):
 	return x + y
+
 t = (1, 'a', 2, 'b')
 l = [1, 'a', 2, 'b']
 data = [s, None, 1, 1.0, add_nums, t, l]
