@@ -37,10 +37,10 @@
 + **A way to make a substring of a string in python**
 
 ### 8. When you create a lambda, what type is returned? E.g. type(lambda x: x+1) returns
-+ **<class 'function'>**
-+ <class 'type'>
-+ <class 'int'>
-+ <class 'object'>
++ **`<class 'function'>`**
++ `<class 'type'>`
++ `<class 'int'>`
++ `<class 'object'>`
 
 ### 9. The epoch refers to
 + January 1, year 0
@@ -63,22 +63,11 @@
  [24, 25, 26, 27, **28**, 29],
  [30, 31, 32, 33, 34, **35**]]
 ```
-+ 
-```
-**r.reshape(36)[::7]**
-```
-+ 
-```
-r[::7]
-```
-+ 
-```
-r[:,::7]
-```
-+ 
-```
-r[0:6,::-7]
-```
++ **`r.reshape(36)[::7]`**
++ `r[::7]`
++ `r[:,::7]`
++ `r[0:6,::-7]`
+
 ### 12. Given a 6x6 NumPy array r, which of the following options would slice the shaded elements?
 ```python
 [[ 0,  1,  2,  3,  4,  5],
