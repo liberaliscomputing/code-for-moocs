@@ -84,7 +84,6 @@ print x ** 2
 # Doc product
 print x.dot(y) == sum(x * y.T)
 
-
 # Transposing arrays
 z = np.array([y, y ** 2])
 print z
