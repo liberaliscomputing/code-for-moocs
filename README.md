@@ -16,4 +16,5 @@ This is a repository of self-worked example code for MOOCs.
 
 ####[Algorithms and Data Structures in Python](https://www.udemy.com/algorithms-and-data-structures-in-python/)
 + Offered by Holczer Balazs
-+ [Section-01: Introduction]() 
++ [Section-01: Introduction](https://github.com/liberaliscomputing/code-for-moocs/blob/master/udemy/algorithms-and-data-structures-in-python/introduction.ipynb)  
+	+ [Complexity Theory Basics](https://www.udemy.com/complexity-theory-basics/)
