@@ -12,9 +12,13 @@ This is a repository of self-worked example code for MOOCs.
 + [Week-03: Advanced Python Pandas](https://github.com/liberaliscomputing/code-for-moocs/tree/master/coursera/introduction-to-data-science-in-python/week-03-advanced-python-pandas)  
 + [Week-04: Statistical Analysis in Python and Project](https://github.com/liberaliscomputing/code-for-moocs/tree/master/coursera/introduction-to-data-science-in-python/week-04-statistical-analysis-in-python-and-project)
 
+#### [Machine Learning](https://www.coursera.org/learn/machine-learning/)
++ Offered by Dr. Andrew Ng at Stanford University and Baidu
+
 ### [Udemy](https://www.udemy.com/)
 
 ####[Algorithms and Data Structures in Python](https://www.udemy.com/algorithms-and-data-structures-in-python/)
 + Offered by Holczer Balazs
 + [Section-01: Introduction](https://github.com/liberaliscomputing/code-for-moocs/blob/master/udemy/algorithms-and-data-structures-in-python/introduction.ipynb)  
-	+ [Complexity Theory Basics](https://www.udemy.com/complexity-theory-basics/)
+	+ [Complexity Theory Basics](https://www.udemy.com/complexity-theory-basics/)  
++ [Section-02: Data Structures - Arrays](https://github.com/liberaliscomputing/code-for-moocs/blob/master/udemy/algorithms-and-data-structures-in-python/data_structures_arrays.ipynb)  
