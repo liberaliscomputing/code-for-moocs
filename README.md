@@ -14,6 +14,8 @@ This is a repository of self-worked example code for MOOCs.
 
 #### [Machine Learning](https://www.coursera.org/learn/machine-learning/)
 + Offered by Dr. Andrew Ng at Stanford University and Baidu
++ [Week-01: Introduction and Linear Regression]
++ [Week-02: Multivariate Linear Regression and Analytical Parameter Computing]
 
 ### [Udemy](https://www.udemy.com/)
 
@@ -22,3 +24,5 @@ This is a repository of self-worked example code for MOOCs.
 + [Section-01: Introduction](https://github.com/liberaliscomputing/code-for-moocs/blob/master/udemy/algorithms-and-data-structures-in-python/introduction.ipynb)  
 	+ [Complexity Theory Basics](https://www.udemy.com/complexity-theory-basics/)  
 + [Section-02: Data Structures - Arrays](https://github.com/liberaliscomputing/code-for-moocs/blob/master/udemy/algorithms-and-data-structures-in-python/data_structures_arrays.ipynb)  
++ [Section-03: Data Structures - Linked Lists](https://github.com/liberaliscomputing/code-for-moocs/blob/master/udemy/algorithms-and-data-structures-in-python/data_structures_linked_lists.ipynb)  
+
