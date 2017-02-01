@@ -16,7 +16,7 @@ This is a repository of self-worked example code for MOOCs.
 + Offered by Dr. Andrew Ng at Stanford University and Baidu
 + [Week-01: Introduction and Linear Regression](https://github.com/liberaliscomputing/code-for-moocs/tree/master/coursera/machine-learning/week-01)
 + [Week-02: Multivariate Linear Regression and Analytical Parameter Computing](https://github.com/liberaliscomputing/code-for-moocs/tree/master/coursera/machine-learning/week-02)
-+ [Week-3: Logistic Regression and Regularization](https://github.com/liberaliscomputing/code-for-moocs/tree/master/coursera/machine-learning/week-03)
++ [Week-03: Logistic Regression and Regularization](https://github.com/liberaliscomputing/code-for-moocs/tree/master/coursera/machine-learning/week-03)
 
 ### [Udemy](https://www.udemy.com/)
 
@@ -27,4 +27,5 @@ This is a repository of self-worked example code for MOOCs.
 + [Section-02: Data Structures - Arrays](https://github.com/liberaliscomputing/code-for-moocs/blob/master/udemy/algorithms-and-data-structures-in-python/data_structures_arrays.ipynb)  
 + [Section-03: Data Structures - Linked Lists](https://github.com/liberaliscomputing/code-for-moocs/blob/master/udemy/algorithms-and-data-structures-in-python/data_structures_linked_lists.ipynb)  
 + [Section-04: Data Structures - Stacks and Queues](https://github.com/liberaliscomputing/code-for-moocs/blob/master/udemy/algorithms-and-data-structures-in-python/data_structures_stacks_and_queues.ipynb)  
++ [Section-05: Data Structures - Binary Search Trees](https://github.com/liberaliscomputing/code-for-moocs/blob/master/udemy/algorithms-and-data-structures-in-python/data_structures_binary_search_trees.ipynb)  
 
