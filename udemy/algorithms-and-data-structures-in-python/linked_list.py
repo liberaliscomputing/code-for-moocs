@@ -33,19 +33,31 @@ class LinkedList(object):
 
     self.size += 1
       
-  def delete(self, data):
+  def delete(self, data, index=False):
     if self.size == 0:
       return 'LinkedList is empty.'
+
+    if index == True:
+      if data > self.size:
+        return 'IndexError: list out of range'
 
     curr = self.head
     prev = None
     
-    while data != curr.data:
-      prev = curr
-      curr = curr.next
+    if index:
+      for i in range(index):
+        prev = curr
+        curr = curr.next
+        
+        if not curr:
+          return 'No such item.'
+    else:
+      while data != curr.data:
+        prev = curr
+        curr = curr.next
 
-      if not curr:
-        return 'No such item.'
+        if not curr:
+          return 'No such item.'
         
     if not prev:
       self.head = curr.next
