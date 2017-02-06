@@ -14,9 +14,10 @@ This is a repository of self-worked example code for MOOCs.
 
 #### [Machine Learning](https://www.coursera.org/learn/machine-learning/)
 + Offered by Dr. Andrew Ng at Stanford University and Baidu
-+ [Week-01: Introduction and Linear Regression](https://github.com/liberaliscomputing/code-for-moocs/tree/master/coursera/machine-learning/week-01)
-+ [Week-02: Multivariate Linear Regression and Analytical Parameter Computing](https://github.com/liberaliscomputing/code-for-moocs/tree/master/coursera/machine-learning/week-02)
-+ [Week-03: Logistic Regression and Regularization](https://github.com/liberaliscomputing/code-for-moocs/tree/master/coursera/machine-learning/week-03)
++ [Week-01: Introduction](https://github.com/liberaliscomputing/code-for-moocs/tree/master/coursera/machine-learning/week-01)
++ [Week-02: Multivariate Linear Regression](https://github.com/liberaliscomputing/code-for-moocs/tree/master/coursera/machine-learning/week-02)
++ [Week-03: Logistic Regression](https://github.com/liberaliscomputing/code-for-moocs/tree/master/coursera/machine-learning/week-03)
++ [Week-04: Neural Networks - Representation](https://github.com/liberaliscomputing/code-for-moocs/tree/master/coursera/machine-learning/week-04)
 
 ### [Udemy](https://www.udemy.com/)
 
