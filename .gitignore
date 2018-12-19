@@ -1,2 +1,8 @@
-.DS_Store
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# compliled files
 *.pyc
+
+# misc
+.DS_Store
+.vscode
