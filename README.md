@@ -27,3 +27,16 @@ This is a repository of self-worked example code for MOOCs.
 + [Section-03: Data Structures - Linked Lists](https://github.com/liberaliscomputing/code-for-moocs/blob/master/udemy/algorithms-and-data-structures-in-python/data_structures_linked_lists.ipynb)  
 + [Section-04: Data Structures - Stacks and Queues](https://github.com/liberaliscomputing/code-for-moocs/blob/master/udemy/algorithms-and-data-structures-in-python/data_structures_stacks_and_queues.ipynb)  
 + [Section-05: Data Structures - Binary Search Trees](https://github.com/liberaliscomputing/code-for-moocs/blob/master/udemy/algorithms-and-data-structures-in-python/data_structures_binary_search_trees.ipynb)
+
+### Programming
+
+#### [The Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-react/) by Kent C. Dodds
++ [Lesson-01: Introduction to The Beginner's Guide to ReactJS](https://egghead.io/lessons/react-introduction-to-the-beginner-s-guide-to-reactjs)
++ [Lesson-02: Create HTML elements with React's createElement API](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/the-beginners-guide-to-react/lesson-02-create-html-elements-with-reacts-createelement-api)
++ [Lesson-03: Replace React createElement Function Call with JSX](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/the-beginners-guide-to-react/lesson-03-replace-react-createelement-call-with-jsx)
++ [Lesson-04: Create a Simple Reusable React Component](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/the-beginners-guide-to-react/lesson-04-create-a-simple-reusable-react-component)
++ [Lesson-05: Validate Custom React Component Props with PropTypes](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/the-beginners-guide-to-react/lesson-05-validate-custom-react-component-props-with-proptypes)
++ [Lesson-06: Conditionally Render A React Component](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/the-beginners-guide-to-react/lesson-06-conditionally-render-a-react-component)
++ [Lesson-07: Rerender a React Application](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/the-beginners-guide-to-react/lesson-07-rerender-a-react-application)
++ [Lesson-08: Style React Components with className and In Line Styles](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/the-beginners-guide-to-react/lesson-08-style-react-components-with-classname-and-in-line-styles)
++ [Lesson-09: Use Event Handlers with React](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/the-beginners-guide-to-react/lesson-09-use-event-handlers-with-react)

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Title</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script src="https://unpkg.com/react@16.3.1/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.3.1/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+  <script type="text/babel">
+    const rootElement = document.getElementById('root');
+
+    /**
+    const element = document.createElement('div');
+
+    element.textContent = 'Hello World!';
+    element.className = 'container';
+
+    rootElement.appendChild(element);
+     */
+
+    /**
+    const element = React.createElement(
+      'div', 
+      { 
+        className: 'container',
+        children: ['Hello World!'],
+      },
+    );
+    
+     */
+
+    // the lines below achive above with JSX
+    const children = 'Hello World!';
+    const className = 'container';
+    //const element = <div className={className}>{(() => children)}</div>;
+
+    const props = { children, className };
+    const element = <div { ...props } />;
+    ReactDOM.render(element, rootElement);
+  </script>
+</html>
