@@ -6,9 +6,9 @@ Q. Convert this to the JavaScript (`React.createElement`) equivalent:
 A.  
 ```
 React.createElement(
-    'div',
-    { id: 'greeting', className: 'active' },
-    'Hello ',
-    user.name,
+  'div',
+  { id: 'greeting', className: 'active' },
+  'Hello ',
+  user.name,
 );
 ```
