@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Use the key prop when Rendering a List with React</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script src="https://unpkg.com/react@16.3.1/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.3.1/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>  
+  <script type="text/babel">
+    class App extends React.Component {
+      static releases = [
+        { id: 'RE_00000000', value: 'RE_00000000'},
+        { id: 'RE_00000001', value: 'RE_00000001'},
+        { id: 'RE_00000002', value: 'RE_00000002'},
+        { id: 'RE_00000003', value: 'RE_00000003'},
+      ]
+
+      state = { releases: [] };
+
+      add = () => {
+        this.setState(({releases}) => {
+          return {
+            releases: [
+              ...releases,
+              App.releases.find((release) => {
+                return !releases.includes(release);
+              }),
+            ],
+          };
+        });
+      }
+
+      remove = (item) => {
+        this.setState(({releases}) => {
+          return {
+            releases: releases.filter((release) => {
+              return release !== item;
+            }),
+          }
+        });
+      }
+
+      render() {
+        /**
+        return (
+          <div>
+            {App.releases.map(release => (
+              <div key={release.id}>{release.value}</div>
+            ))}
+          </div>
+        );
+         */
+        
+        const { releases } = this.state;
+        return (
+          <div>
+            <button
+              disabled={releases.length >= App.releases.length}
+              onClick={this.add}
+            >
+             +
+            </button>
+            {releases.map((release) => (
+              <div key={release.id}>
+                <button
+                  onClick={() => this.remove(release)}
+                >
+                  -
+                </button>
+                {release.value}:
+                <input />
+              </div>
+            ))}
+          </div>
+        );
+      }
+    }
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</html>

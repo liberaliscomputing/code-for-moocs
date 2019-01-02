@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Make HTTP Requests with React</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script src="https://unpkg.com/react@16.3.1/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.3.1/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+  <script src="https://unpkg.com/axios@0.16.2/dist/axios.min.js"></script>
+  <script type="text/babel">
+    class UserCompany extends React.Component {
+      state = { company: undefined, loaded: false };
+
+      componentDidMount() {
+        axios({
+          url: 'https://api.github.com/graphql',
+          method: 'POST',
+          data: {
+            query: `{
+              user(login: \"${this.props.username}\") {
+                company
+              }
+            }`,
+          },
+          headers: {
+            Authorization: `bearer USE-YOUR-USER-READ-ONLY-TOKEN`,
+          },
+        }).then((res) => {
+          this.setState({
+            loaded: true,
+            company: res.data.data.user.company,
+          }, (err) => {
+            this.setState({
+              loaded: true, 
+              err,
+            })
+          });
+        });
+      }
+      
+      render() {
+        return this.state.loaded ? this.state.company : 'Unavailable';
+      }
+    }
+
+    const username = 'USERNAME';
+    const element = (
+      <div>
+        {`@${username} works at `}
+        <UserCompany username={username} />
+      </div>
+    );
+
+    ReactDOM.render(element, document.getElementById('root'));
+  </script>
+</html>

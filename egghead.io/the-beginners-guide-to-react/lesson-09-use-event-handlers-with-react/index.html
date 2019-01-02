@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Use Event Handlers with React</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script src="https://unpkg.com/react@16.3.1/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.3.1/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>  
+  <script type="text/babel">
+    const state = { eventCount: 0, userName: '' };
+
+    const increaseEventCount = () => {
+      setState({ eventCount: state.eventCount + 1 });
+    };
+
+    const updateUserName = (event) => {
+      setState({ userName: event.target.value });
+    };
+
+    const setState = (newState) => {
+      Object.assign(state, newState);
+      renderApp();
+    };
+
+    const App = () => {
+      return (
+        <div>
+          <p>There have been {state.eventCount} event(s).</p>
+          <p>
+            <button onClick={increaseEventCount}>Click Me!</button>
+          </p>
+          <p>
+            <input onChange={updateUserName} />
+          </p>
+          <p>You typed: {state.userName}</p>
+        </div>
+      );
+    };
+
+    const renderApp = () => {
+      ReactDOM.render(<App />, document.getElementById('root'));
+    };
+
+    renderApp();
+  </script>
+</html>
