@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Use Component State with React</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script src="https://unpkg.com/react@16.3.1/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.3.1/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>  
+  <script type="text/babel">
+    class StopWatch extends React.Component {
+      state = { isRunning: false, lapse: 0 };
+
+      run = () => {
+        this.setState((state) => {
+          if (state.isRunning) clearInterval(this.timer);
+          else {
+            const start = Date.now() - this.state.lapse;
+            this.timer = setInterval(() => {
+              this.setState({ lapse: Date.now() - start });
+            });
+          }
+
+          return { isRunning: !state.isRunning };
+        });
+      }
+
+      reset = () => {
+        clearInterval(this.timer);
+        this.setState({ isRunning: false, lapse: 0 });
+      }
+
+      render() {
+        const { isRunning, lapse } = this.state;
+        const buttonStyles = {
+          border: '1px solid #ccc',
+          background: '#fff',
+          fontSize: '2em',
+          padding: 15,
+          margin: 5,
+          width: 200,
+        };
+
+        return (
+          <div style={{ textAlign: 'center' }}>
+            <label 
+              style={{ fontSize: '5em', display: 'block' }}
+            >
+              {lapse} ms
+            </label>
+            <button 
+              onClick={this.run} 
+              style={buttonStyles}
+            >
+              {isRunning ? 'Stop' : 'Start'}
+            </button>
+            <button 
+              onClick={this.reset} 
+              style={buttonStyles}
+            >
+              Reset
+            </button>
+          </div>
+        );
+
+      }
+    }
+
+    ReactDOM.render(<StopWatch />, document.getElementById('root'));
+  </script>
+</html>

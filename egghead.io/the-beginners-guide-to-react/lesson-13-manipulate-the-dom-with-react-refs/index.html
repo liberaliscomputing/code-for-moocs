@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Manipulate the DOM with React refs</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script src="https://unpkg.com/react@16.3.1/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.3.1/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+  <script src="https://unpkg.com/vanilla-tilt@1.4.1/dist/vanilla-tilt.min.js"></script> 
+  <script type="text/babel">
+    class Tilt extends React.Component {
+      componentDidMount() {
+        VanillaTilt.init(this.rootNode, {
+          max: 25,
+          speed: 400,
+          glare: true,
+          'max-glare': 0.5,
+        });
+      }
+
+      render() {
+        return (
+          <div 
+            ref={node => this.rootNode = node}
+            className="tilt-root"
+          >
+            <div className="tilt-leaf">
+              <div {...this.props} />
+            </div>
+          </div>
+        );
+      }
+    }
+    
+    const element = (
+      <div className="totally-centered">
+        <Tilt>
+          <div className="totally-centered">vanilla-tilt.js</div>
+        </Tilt>
+      </div>
+    );
+
+    ReactDOM.render(element, document.getElementById('root'));
+  </script>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Make Dynamic Forms with React</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script src="https://unpkg.com/react@16.3.1/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.3.1/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>  
+  <script type="text/babel">
+    class Form extends React.Component {
+      state = {error: this.props.func('')};
+
+      submit = (event) => {
+        event.preventDefault();
+        const value = event.target.elements.input.value;
+        const error = this.props.func(value);
+
+        if (error) alert(`error: ${error}`);
+        else alert(`success: ${value}`);
+      }
+
+      change = (event) => {
+        const { value } = event.target;
+        this.setState({ error: this.props.func(value)});
+      }
+
+      render() {
+        const { error } = this.state;
+        return (
+          <form onSubmit={this.submit}>
+            <label>
+              Name:
+              <input onChange={this.change} type="text" name="input"/>
+            </label>
+            <button disabled={Boolean(error)} type="submit">Submit</button>
+            {error ? (
+              <span style={{color: 'red'}}>{error}</span>
+            ) : null}
+          </form>
+        );
+      }
+    }
+
+    const validate = (value) => {
+      if (value.length < 3) {
+        return `Input must be at least 3 characters, but is only ${value.length}`;
+      }
+      if (!value.includes('s')) {
+        return `Input does not include \'s\' but it should!`;
+      }
+
+      return null;
+    };
+
+    ReactDOM.render(<Form func={validate} />, document.getElementById('root'));
+  </script>
+</html>

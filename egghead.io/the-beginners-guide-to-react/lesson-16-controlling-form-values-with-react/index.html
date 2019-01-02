@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Controlling Form Values with React</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+
+  <script src="https://unpkg.com/react@16.3.1/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.3.1/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>  
+  <script type="text/babel">
+    class Form extends React.Component {
+      static releases = [
+        'RE_00000000',
+        'RE_00000001',
+        'RE_00000002',
+        'RE_00000003',
+        'RE_00000004',
+      ];
+
+      state = { 
+        delimeted: '', 
+        multilined: '', 
+        multiselect: [],
+      };
+
+      handleDelimitedValues = (event) => {
+        const { value } = event.target;
+        const values = value
+          .split(',')
+          .map(value => value.trim())
+          .filter(Boolean);
+        this.setState({
+          delimeted: value,
+          multilined: values.join('\n'),
+          multiselect: values
+            .filter(value => Form.releases.includes(value)),
+        });
+      }
+
+      handleMultilinedValues = (event) => {
+        const { value } = event.target;
+        const values = value
+          .split('\n')
+          .map(value => value.trim())
+          .filter(Boolean);
+        this.setState({
+          delimeted: values.join(','),
+          multilined: value,
+          multiselect: values
+            .filter(value => Form.releases.includes(value)),
+        });
+      }
+
+      handleMultiselectValues = (event) => {
+        const values = Array.from(
+          event.target.selectedOptions,
+        ).map(option => option.value);
+        this.setState({
+          delimeted: values.join(','),
+          multilined: values.join('\n'),
+          multiselect: values,
+        });
+      }
+
+      render() {
+        const { delimeted, multilined, multiselect } = this.state;
+        return (
+          <form>
+            <div>
+              <label>
+                <p>Delimited Values:</p>
+                <input 
+                  type="text" 
+                  value={delimeted} 
+                  onChange={this.handleDelimitedValues} 
+                />
+              </label>
+            </div>
+            <div>
+              <label>
+                <p>Multilined Values:</p>
+                <textarea 
+                  value={multilined} 
+                  rows={Form.releases.length} 
+                  onChange={this.handleMultilinedValues} 
+                />
+              </label>
+            </div>
+            <div>
+              <label>
+                <p>Multiselect Values:</p>
+                <select 
+                  multiple 
+                  value={multiselect} 
+                  size={Form.releases.length} 
+                  onChange={this.handleMultiselectValues}
+                >
+                  {Form.releases.map(
+                    release => (
+                      <option key={release} value={release} />
+                    )
+                  )}
+                </select>
+              </label>
+            </div>
+          </form>
+        );
+      }
+    }
+
+    ReactDOM.render(<Form />, document.getElementById('root'));
+  </script>
+</html>
