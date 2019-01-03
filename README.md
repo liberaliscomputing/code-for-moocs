@@ -28,6 +28,10 @@ This is a repository of self-worked example code for MOOCs.
 + [Section-04: Data Structures - Stacks and Queues](https://github.com/liberaliscomputing/code-for-moocs/blob/master/udemy/algorithms-and-data-structures-in-python/data_structures_stacks_and_queues.ipynb)  
 + [Section-05: Data Structures - Binary Search Trees](https://github.com/liberaliscomputing/code-for-moocs/blob/master/udemy/algorithms-and-data-structures-in-python/data_structures_binary_search_trees.ipynb)
 
+#### [Data Structures and Algorithms in JavaScript](https://egghead.io/courses/data-structures-and-algorithms-in-javascript) by Kyle Shevlin
++ [Lesson-01: Course Introduction: Data Structures and Algorithms in JavaScript](https://egghead.io/lessons/javascript-course-introduction-data-structures-and-algorithms-in-javascript)
++ [Lesson-02: Queue Data Structure in JavaScript](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/data-structures-and-algorithms-in-js/lesson-02-queue-data-structure-in-js)
+
 ### Programming
 
 #### [The Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-react/) by Kent C. Dodds
