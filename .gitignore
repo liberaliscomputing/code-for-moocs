@@ -3,6 +3,9 @@
 # compliled files
 *.pyc
 
+# dependencies
+node_modules
+
 # misc
 .DS_Store
 .vscode
