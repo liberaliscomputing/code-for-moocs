@@ -1,4 +1,4 @@
-class Queue:
+class CustomQueue:
   def __init__(self):
     self.queue = [];
 
@@ -9,10 +9,10 @@ class Queue:
     self.queue.pop()
 
   def peek(self):
-    return self.queue[len(self.queue) - 1]
+    return self.queue[self.size() - 1]
 
-  def length(self):
+  def size(self):
     return len(self.queue)
 
   def is_empty(self):
-    return len(self.queue) == 0
+    return self.size() == 0

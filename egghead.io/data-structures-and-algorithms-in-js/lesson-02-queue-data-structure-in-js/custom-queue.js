@@ -1,4 +1,4 @@
-class Queue {
+class CustomQueue {
   constructor() { 
     this.queue = []; 
   }
@@ -12,16 +12,16 @@ class Queue {
   }
 
   peek() { 
-    return this.queue[this.queue.length - 1]; 
+    return this.queue[this.size - 1]; 
   }
 
-  get length() { 
+  get size() { 
     return this.queue.length;
   }
 
   isEmpty() { 
-    return this.queue.length === 0; 
+    return this.size === 0; 
   }
 }
 
-module.exports = Queue;
+module.exports = CustomQueue;
