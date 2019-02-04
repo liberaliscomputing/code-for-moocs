@@ -8,7 +8,7 @@ class CustomQueue {
   }
 
   dequeue() { 
-    this.queue.pop(); 
+    return this.queue.pop(); 
   }
 
   peek() { 

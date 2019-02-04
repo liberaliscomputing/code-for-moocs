@@ -1,12 +1,12 @@
 class CustomQueue:
   def __init__(self):
-    self.queue = [];
+    self.queue = []
 
   def enqueue(self, item):
     self.queue.insert(0, item)
 
   def dequeue(self):
-    self.queue.pop()
+    return self.queue.pop()
 
   def peek(self):
     return self.queue[self.size() - 1]
