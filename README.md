@@ -36,6 +36,7 @@ This is a repository of self-worked example code for MOOCs.
 + [Lesson-05: Linked List Data Structure in JavaScript](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/data-structures-and-algorithms-in-js/lesson-05-linked-list-data-structure-in-js)
 + [Lesson-06: JavaScript Graph Data Structure](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/data-structures-and-algorithms-in-js/lesson-06-js-graph-data-structure)
 + [Lesson-07: Breadth First JavaScript Search Algorithm for Graphs](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/data-structures-and-algorithms-in-js/lesson-07-bfs-js-algorithm-for-graphs)
++ [Lesson-08: Write a Depth First Search Algorithm for Graphs in JavaScript](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/data-structures-and-algorithms-in-js/lesson-08-write-a-dfs-search-algorithm-for-graphs-in-js)
 
 ### Programming
 
