@@ -1,6 +1,10 @@
 import os
 import sys
-sys.path.append('/'.join(os.getcwd().split('/')[:-1] + ['lesson-02-queue-data-structure-in-js']))
+sys.path.append(
+  '/'.join(os.getcwd().split('/')[:-1] + [
+    'lesson-02-queue-data-structure-in-js'
+  ])
+)
 
 from custom_queue import CustomQueue
 

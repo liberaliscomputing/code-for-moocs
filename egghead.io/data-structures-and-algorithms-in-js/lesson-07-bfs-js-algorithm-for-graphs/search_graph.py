@@ -1,7 +1,15 @@
 import os
 import sys
-sys.path.append('/'.join(os.getcwd().split('/')[:-1] + ['lesson-06-js-graph-data-structure']))
-sys.path.append('/'.join(os.getcwd().split('/')[:-1] + ['lesson-02-queue-data-structure-in-js']))
+sys.path.append(
+  '/'.join(os.getcwd().split('/')[:-1] + [
+    'lesson-06-js-graph-data-structure'
+  ])
+)
+sys.path.append(
+  '/'.join(os.getcwd().split('/')[:-1] + [
+    'lesson-02-queue-data-structure-in-js'
+  ])
+)
 
 from graph import Graph
 from custom_queue import  CustomQueue
