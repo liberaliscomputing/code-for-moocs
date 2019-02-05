@@ -33,3 +33,17 @@ class SearchGraph(Graph):
         if not hist[neighbor.key]:
           custom_queue.enqueue(neighbor)
   
+  def depth_first_search(self, key, func):
+    head = self.get_node(key)
+    hist = { node.key: False for node in self.nodes }
+
+    def traverse(node):
+      if hist[node.key]: return
+
+      func(node)
+      hist[node.key] = True
+
+      for neighbor in node.neighbors:
+        traverse(neighbor)
+    
+    traverse(head)    
