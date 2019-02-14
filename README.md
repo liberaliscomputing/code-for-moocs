@@ -40,6 +40,9 @@ This is a repository of self-worked example code for MOOCs.
 + [Lesson-09: Tree Data Structure in JavaScript](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/data-structures-and-algorithms-in-js/lesson-09-tree-data-structure-in-js)
 + [Lesson-10: Build a Binary Tree in JavaScript and Several Traversal Algorithms](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/data-structures-and-algorithms-in-js/lesson-10-build-a-bt-in-js-and-traversal)
 + [Lesson-11: Sort an Array with a JavaScript do while Loop Using Bubble Sort](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/data-structures-and-algorithms-in-js/lesson-11-sort-an-arr-with-a-js-do-while-loop-using-bubble-sort)
++ [Lesson-12: Sort an Array with a Nested for Loop using Insertion Sort in JavaScript](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/data-structures-and-algorithms-in-js/lesson-12-sort-an-arr-with-a-nested-for-loop-using-insertion-sort-in-js)
++ [Lesson-13: Divide and Recurse Over an Array with Merge Sort in JavaScript](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/data-structures-and-algorithms-in-js/lesson-13-divide-and-recurse-over-an-arr-with-merge-sort-in-js)
++ [Lesson-14: Recursively Sort an Array in JavaScript with Quick Sort](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/data-structures-and-algorithms-in-js/lesson-14-recursively-sort-an-arr-in-js-with-quick-sort)
 
 ### Programming
 
