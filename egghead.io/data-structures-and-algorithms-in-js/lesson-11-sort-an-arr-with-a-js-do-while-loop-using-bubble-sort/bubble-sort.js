@@ -18,6 +18,6 @@ const bubbleSort = (array) => {
   } while (isSwapped);
 
   return array;
-}
+};
 
 module.exports = bubbleSort;
