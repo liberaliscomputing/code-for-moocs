@@ -66,3 +66,12 @@ This is a repository of self-worked example code for MOOCs.
 + [Lesson-17: Use the key Prop when Rendering a List with React](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/the-beginners-guide-to-react/lesson-17-use-the-key-prop-when-rendering-a-list-with-react)
 + [Lesson-18: Make HTTP Requests with React](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/the-beginners-guide-to-react/lesson-18-make-http-requests-with-react)
 + [Lesson-19: Build and Deploy a React Application](https://egghead.io/lessons/react-build-and-deploy-a-react-application)
+
+### [Build a GraphQL Server](https://egghead.io/courses/build-a-graphql-server/) by Josh Black
++ [Lesson-01: Create a GraphQL Schema](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/build-a-graphql-server/lesson-01-create-a-graphql-schema)
++ [Lesson-02: Use GraphQL Primitive Types](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/build-a-graphql-server/lesson-02-use-graphql-primitive-types)
++ [Lesson-03: Use GraphQL's Object Type for Basic Types](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/build-a-graphql-server/lesson-03-use-graphqls-object-type-for-basic-types)
++ [Lesson-04: Use GraphQL's List Type for Collections](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/build-a-graphql-server/lesson-04-use-graphqls-list-type-for-collections)
++ [Lesson-05: Serve a GraphQL Schema as Middleware in Express](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/build-a-graphql-server/lesson-05-serve-a-graphql-schema-as-middleware-in-express)
++ [Lesson-06: Write a GraphQL Schema in JavaScript](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/build-a-graphql-server/lesson-06-write-a-graphql-schema-in-js)
++ [Lesson-07: Use Arguments in a GraphQL Query](https://github.com/liberaliscomputing/code-for-moocs/blob/master/egghead.io/build-a-graphql-server/lesson-07-use-arguments-in-a-graphql-query)

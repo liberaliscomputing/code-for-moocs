@@ -1,0 +1,9 @@
+{
+  "name": "lesson-03-use-graphqls-object-type-for-basic-types",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "graphql": "^14.1.1"
+  }
+}
