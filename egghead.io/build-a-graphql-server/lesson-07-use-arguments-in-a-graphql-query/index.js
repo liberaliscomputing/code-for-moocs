@@ -1,7 +1,6 @@
 'use strict';
 
 const express = require('express');
-const graphqlHTTP = require('express-graphql');
 const {
   GraphQLSchema,
   GraphQLObjectType,
@@ -10,6 +9,8 @@ const {
   GraphQLInt,
   GraphQLBoolean,
 } = require('graphql');
+const graphqlHTTP = require('express-graphql');
+
 const { getMovieById } = require('./src/data');
 
 
@@ -35,9 +36,8 @@ const movieType = new GraphQLObjectType({
     watched: {
       type: GraphQLBoolean,
       description: 'Whether watched',
-    }
-  }
-
+    },
+  },
 });
 const queryType = new GraphQLObjectType({
   name: 'QueryType',
@@ -49,7 +49,7 @@ const queryType = new GraphQLObjectType({
         id: {
           type: GraphQLID,
           description: 'The ID of a movie',
-        }
+        },
       },
       resolve: (_, args) => {
         return getMovieById(args.id);
@@ -65,7 +65,6 @@ server.use('/graphql', graphqlHTTP({
   schema,
   graphiql: true,
 }));
-
 
 server.listen(PORT, (error) => {
   if (error) throw error;

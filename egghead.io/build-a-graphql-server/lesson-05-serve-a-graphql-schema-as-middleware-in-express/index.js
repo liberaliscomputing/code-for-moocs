@@ -1,8 +1,8 @@
 'use strict';
 
 const express = require('express');
-const graphqlHTTP = require('express-graphql');
 const { buildSchema } = require('graphql');
+const graphqlHTTP = require('express-graphql');
 
 
 const PORT = process.env.PORT || 3000;
@@ -43,7 +43,6 @@ const movies = [
 const resolvers = {
   movies: () => movies,
 };
-
 
 server.use('/graphql', graphqlHTTP({
   schema,
