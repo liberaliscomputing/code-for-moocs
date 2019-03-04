@@ -1,0 +1,9 @@
+{
+  "name": "lesson-01-create-a-graphql-schema",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "graphql": "^14.1.1"
+  }
+}

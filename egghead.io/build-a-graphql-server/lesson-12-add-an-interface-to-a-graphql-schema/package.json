@@ -1,0 +1,11 @@
+{
+  "name": "lesson-12-add-an-interface-to-a-graphql-schema",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.1.1"
+  }
+}
